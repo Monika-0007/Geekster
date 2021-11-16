@@ -12,7 +12,7 @@ public class digits {
 			digit=0;
 		System.out.println("Enter the number:");
 		m=sc.nextInt();
-		//to generate number of digits
+		//to count number of digits
 		do
 		{
 			digit++;

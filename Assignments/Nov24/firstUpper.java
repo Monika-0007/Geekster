@@ -13,8 +13,8 @@ public class firstUpper
 		//To convert first character of the sentence to Upper Case
 		s=s+arr[0];
 		s=s.toUpperCase();
-		//Tp covert first character of the word in a sentence to Upper Case
-		for(int i=1;i<arr.length;i++)
+		//To covert first character of each word in a sentence to Upper Case
+		for(int i=1;i<arr.length;i++)//i=1 as character at index 0 already converted to Upper case
 		{
 			if(arr[i]!=' ')
 			{

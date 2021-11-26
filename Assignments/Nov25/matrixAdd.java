@@ -102,12 +102,13 @@ public class matrixAddition {
 	int m2=arr2[0].length;
 		if(n1==n2 && m1 == m2)
 		{
-			int res[][]=new int[n1][m1];
+		    int res[][]=new int[n1][m1];
+		//Invoking method matrixAdd to return addition of two matrices
 		    res=matrixAdd(arr1,arr2);
 		    System.out.println("Resultant Matrix");
 		    printMatrix(res);
 		    System.out.println("Resultant Matrix(Column Wise)");
-			columnWise(res);
+		    columnWise(res);
 		}
 	}
 }

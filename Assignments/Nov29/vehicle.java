@@ -20,7 +20,7 @@ public class Automobiles
                 car.fuelType("Petrol/Diesel");
                 System.out.println();
 		
-		//truck
+		//TRUCK
                 System.out.println("^^^^ TRUCK ^^^^");
 		Vehicle truck  = new Vehicle(6,"Goods");
 		System.out.println("No of tyres: "+truck.getTyres());
@@ -35,7 +35,7 @@ class Vehicle
 	int tyres;
 	String type;
 	
-	//Constructor
+	//Default Constructor
 	Vehicle()
 	{
 		this.tyres=2;

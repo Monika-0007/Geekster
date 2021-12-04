@@ -24,6 +24,7 @@ Check if compile time error exists. If yes, correct the code to remove the error
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 Answer: Yes, Compile Error exists!!
 Error -> The type A is not visible
+Reason : When the access specifier for class A is not specified, the access specifier is considered as "default", whose accessibility is limited to classes within the same package. Hence when class B of package 2 creates instance of class A of package 1, comile time error occurs as the accessibility is limited only to all the classes of package 1 but not package 2.
 
 M O D I F I E D    C O D E
 

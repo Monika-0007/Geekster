@@ -19,7 +19,7 @@ public class AnimalTest
 		Animals.incrementAge();
 		
 		System.out.println("P I G E O N");
-		Animals pgn = new Animals(4,"Domestic",2);
+		Animals pgn = new Animals(2,"Domestic",2);
 		pgn.display();
 		pgn.isHerbivore();
 		Animals.incrementAge();

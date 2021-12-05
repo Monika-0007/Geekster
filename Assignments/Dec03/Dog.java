@@ -1,24 +1,30 @@
+package objects;
+
 public class Dog
 {
-    public void speak()
+    private String name;
+
+    public Dog(String name)
     {
-        System.out.println("woof!");
+        this.name = name;
     }
 
+    public boolean equals(Object other)
+    {
+    	 Dog d = (Dog) other;
+    	 //System.out.println(this.name+"\t"+d.name);
+         return (this.name==d.name);
+    }
     public static void main(String[] args)
     {
-        Dog d = new Dog();
-        d.speak();
-        Dog b = new Beagle();
-        b.speak();
-    }
-}
-
-class Beagle extends Dog
-{
-    public void speak()
-    {
-        System.out.println("arf arf");
+        Dog d1 = new Dog("Rufus");
+        Dog d2 = new Dog("Sally");
+        Dog d3 = new Dog("Rufus");
+        Dog d4 = d3;
+        System.out.println(d1.equals(d2));
+        System.out.println(d2.equals(d3));
+        System.out.println(d1.equals(d3));
+        System.out.println(d3.equals(d4));
     }
 }
 

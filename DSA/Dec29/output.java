@@ -18,3 +18,6 @@ class practice{
                 System.out.println(fun(5));
             }
 }
+
+
+//OUTPUT : 5
